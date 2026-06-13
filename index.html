@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Ramakrishnan M | Portfolio 2026</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- SEO Meta Tags -->
+    <meta content="Ramakrishnan M, Odoo Developer, Python Developer, Portfolio" name="keywords">
+    <meta
+        content="Personal portfolio of Ramakrishnan M, Junior Odoo & Python Developer based in Tamil Nadu, India. Specializing in customized Odoo modules and backend programming."
+        name="description">
+
+    <!-- Favicon -->
+    <link href="assets/ramki.png" rel="icon" type="image/png">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 1. Interactive Particles Canvas -->
+    <canvas id="crystalCanvas" class="crystal-canvas"></canvas>
+
+    <!-- 2. Dynamic Hover Light Overlay -->
+    <div id="glowOverlay" class="gradient-orbs-overlay"></div>
+
+    <!-- 3. Speedometer Scroll Tracker (Dashboard) -->
+    <div class="scroll-tracker" id="scrollTracker">
+        <div class="scroll-speedometer">
+            <svg class="speedometer-svg" viewBox="0 0 36 36">
+                <path class="speedometer-bg"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+                <path class="speedometer-fill" id="speedometerFill"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831"></path>
+            </svg>
+            <span class="speedometer-text" id="speedometerPct">0%</span>
+        </div>
+        <div class="tracker-dot active" data-target="#home"><span class="tracker-tooltip">Home</span></div>
+        <div class="tracker-dot" data-target="#about"><span class="tracker-tooltip">About</span></div>
+        <div class="tracker-dot" data-target="#experience"><span class="tracker-tooltip">Experience</span></div>
+        <div class="tracker-dot" data-target="#education"><span class="tracker-tooltip">Education</span></div>
+        <div class="tracker-dot" data-target="#projects"><span class="tracker-tooltip">Projects</span></div>
+        <div class="tracker-dot" data-target="#services"><span class="tracker-tooltip">Services</span></div>
+        <div class="tracker-dot" data-target="#contact"><span class="tracker-tooltip">Contact</span></div>
+    </div>
+
+    <!-- 4. Navigation Header -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="#home" class="nav-brand">RAMKI</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 5. Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Welcome to the future</p>
+                    <h1 class="hero-title">Ramakrishnan M</h1>
+                    <p
+                        style="color: var(--accent-cyan); font-weight: 600; font-size: 1.25rem; margin-top: -0.5rem; letter-spacing: 1px; text-shadow: 0 0 10px rgba(var(--accent-cyan-rgb), 0.3);">
+                        Junior Odoo Developer | Python Developer</p>
+
+                    <!-- Dynamic role scrambling placeholder -->
+                    <div class="scramble-role">
+                        <span id="roleText">Junior Odoo Developer</span>
+                        <span class="scramble-cursor"></span>
+                    </div>
+
+                    <p class="hero-description text-muted">
+                        Crafting high-performance enterprise workflows and clean backend logic. Specializing in
+                        customized Odoo integrations, Python architectures, and database optimizations.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="assets/RAMAKRISHNAN_M__Junior_Odoo_Developer_.pdf" target="_blank"
+                            class="btn btn-primary">
+                            <i class="fa-solid fa-file-arrow-down" style="margin-right: 8px;"></i>Download Resume
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image-wrapper">
+                    <div class="hero-glow-back"></div>
+                    <div class="hero-frame">
+                        <img src="assets/ramki.png" alt="Ramakrishnan M" class="hero-avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 6. About Section -->
+    <section class="section reveal" id="about">
+        <div class="container">
+            <h2 class="section-title">01. Learn About Me</h2>
+            <div class="about-grid">
+                <div class="glass-panel about-text-content">
+                    <p>
+                        As a passionate and driven <strong>Junior Odoo Developer</strong> with over 2 years of hands-on
+                        experience, I focus on engineering robust solutions that solve complex client requirements.
+                    </p>
+                    <ul>
+                        <li>Engineering tailored Inventory delivery flows, optimizing Sales Order processing, and
+                            overriding default vendor pricelist priority logic to meet complex business rules.</li>
+                        <li>Customizing the POS to capture names and signatures, create and confirm the Sales Order
+                            from the POS screen, and print the quotation for the created Sales Order inside POS.</li>
+                        <li>Configuring signature capture only for this customized POS flow, not for the default POS
+                            behavior.</li>
+                        <li>Designing POS discount logic to apply tier discount in addition to the default POS discount.
+                        </li>
+                        <li>Designing robust Magento API interfaces for scheduled batch price synchronizations and
+                            complex tier discount mapping.</li>
+                        <li>Developing a custom API integration that imports JSON data from an external manufacturer
+                            data source into Odoo, creates review records, and updates or creates products after user
+                            approval.</li>
+                        <li>Building a 150-column product importer that processes 1,000 rows per minute, creates missing
+                            Odoo fields and attributes, and keeps Odoo usable while the import runs.</li>
+                        <li>Reading PDFs and comparing unit prices against purchase order lines to verify discrepancies.
+                        </li>
+                        <li>Deploying code to highly secure on-premise environments and tracking logs using AWS
+                            services.</li>
+                    </ul>
+                    <div class="skill-pills">
+                        <span class="skill-pill">Python</span>
+                        <span class="skill-pill">Odoo (ORM & Views)</span>
+                        <span class="skill-pill">PostgreSQL / MySQL</span>
+                        <span class="skill-pill">XML / QWeb</span>
+                        <span class="skill-pill">JavaScript</span>
+                        <span class="skill-pill">Git & GitHub</span>
+                        <span class="skill-pill">Odoo.sh</span>
+                        <span class="skill-pill">OWL (Odoo Web Library)</span>
+                    </div>
+                </div>
+                <div class="glass-panel skill-bars">
+                    <h3 style="margin-bottom: 1.5rem;">Core Metrics</h3>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Odoo Framework (Python, XML, SQL)</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>API Integration</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-bar-wrapper">
+                        <div class="skill-info">
+                            <span>Web UI (HTML/CSS/JS)</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-track">
+                            <div class="skill-fill" data-width="75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Professional Experience Section -->
+    <section class="section reveal" id="experience">
+        <div class="container">
+            <h2 class="section-title">02. Professional Experience</h2>
+            <div class="timeline-container" style="max-width: 900px; margin: 0 auto;">
+                <!-- Current Role -->
+                <div class="timeline-item">
+                    <div class="glass-panel timeline-panel">
+                        <span class="timeline-date">June 2025 - Present</span>
+                        <h4 class="timeline-title">Junior Odoo Developer</h4>
+                        <div class="timeline-subtitle">Navabrind IT Solutions Pvt Ltd</div>
+                        <div class="timeline-location">Kumbakonam, Tamil Nadu</div>
+                        <p class="timeline-desc">Engineered high-performance Odoo backend modules, database syncs, and
+                            hardware integrations:</p>
+                        <ul
+                            style="margin-top: 0.6rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem; list-style: disc; color: var(--text-muted); font-size: 0.85rem;">
+                            <li>Delivered inventory and sales workflow customizations for rule-based fulfillment and
+                                vendor priority handling.</li>
+                            <li>Extended the POS checkout experience with signature capture, quotation printing, and
+                                delivery confirmation from the same screen.</li>
+                            <li>Layered tier discounts on top of the default POS discount logic for more flexible pricing.
+                            </li>
+                            <li>Built approval-driven JSON imports that stage product data in Odoo before creating or
+                                updating records.</li>
+                            <li>Built a 150-column importer optimized for 1,000 rows per minute while preserving Odoo
+                                usability during processing.</li>
+                            <li>Automated PDF and purchase-order price comparison to spot unit price mismatches quickly.
+                            </li>
+                            <li>Handled deployments and logging workflows across secure on-premise systems and AWS.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Trainee Role -->
+                <div class="timeline-item">
+                    <div class="glass-panel timeline-panel">
+                        <span class="timeline-date">June 2024 - June 2025</span>
+                        <h4 class="timeline-title">Trainee Odoo Developer</h4>
+                        <div class="timeline-subtitle">Navabrind IT Solutions Pvt Ltd</div>
+                        <div class="timeline-location">Kumbakonam, Tamil Nadu</div>
+                        <p class="timeline-desc">Hands-on learning, module customization, scripting, and code review
+                            under senior guidance:</p>
+                        <ul
+                            style="margin-top: 0.6rem; padding-left: 1.2rem; display: flex; flex-direction: column; gap: 0.4rem; list-style: disc; color: var(--text-muted); font-size: 0.85rem;">
+                            <li>Worked on HRMS customizations including recruitment, appraisal, payroll, and basic view
+                                level changes.</li>
+                            <li>Implemented a multi-level approval flow in Sales Order with custom domains to determine
+                                whether records require approval.</li>
+                            <li>Worked on report development and designed XLSX and PDF reports with complex table
+                                structures.</li>
+                            <li>Handled Sales, Inventory, and Accounting logic fixes and basic requirement changes in
+                                support projects.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Academic Background Section -->
+    <section class="section reveal" id="education">
+        <div class="container">
+            <h2 class="section-title">03. Academic Background</h2>
+            <div class="timeline-container" style="max-width: 900px; margin: 0 auto;">
+                <!-- MCA -->
+                <div class="timeline-item">
+                    <div class="glass-panel timeline-panel">
+                        <span class="timeline-date">2022 - 2024</span>
+                        <h4 class="timeline-title">Master of Computer Application (MCA)</h4>
+                        <div class="timeline-subtitle">Tiruchirappalli, Tamil Nadu</div>
+                        <p class="timeline-desc">Specialized in software development, database systems, and algorithms.
+                            Graduated with CGPA: 8.1.</p>
+                    </div>
+                </div>
+                <!-- B.Sc -->
+                <div class="timeline-item">
+                    <div class="glass-panel timeline-panel">
+                        <span class="timeline-date">2019 - 2022</span>
+                        <h4 class="timeline-title">B. Sc. Mathematics</h4>
+                        <div class="timeline-subtitle">Kumbakonam, Tamil Nadu</div>
+                        <p class="timeline-desc">Learned core mathematical theories, linear algebra, and discrete logic
+                            structures which form the mathematical foundation of computer science algorithms. CGPA: 9.4
+                        </p>
+                    </div>
+                </div>
+                <!-- Schooling -->
+                <div class="timeline-item">
+                    <div class="glass-panel timeline-panel">
+                        <span class="timeline-date">2018 - 2019</span>
+                        <h4 class="timeline-title">Higher Secondary (BioMaths)</h4>
+                        <div class="timeline-subtitle">Kumbakonam, Tamil Nadu</div>
+                        <p class="timeline-desc">Completed with distinction, securing an aggregate of 88%.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Projects Showcase Section -->
+    <section class="section reveal" id="projects">
+        <div class="container">
+            <h2 class="section-title">04. Done Works</h2>
+
+            <!-- Filters -->
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="odoo">Odoo Customize</button>
+                <button class="filter-btn" data-filter="web">Web Booking</button>
+                <button class="filter-btn" data-filter="java">Java Applications</button>
+            </div>
+
+            <!-- Grid -->
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <!-- Project 1: Odoo -->
+                <div class="glass-panel portfolio-card" data-category="odoo">
+                    <div class="portfolio-img-wrapper">
+                        <img src="assets/Odoo.jpg" alt="Odoo Custom Modules" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Enterprise Modules</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Custom Modules</h3>
+                        <p class="portfolio-desc">
+                            Designed and deployed complex models, tailored ORM flows, accounting pipelines, and
+                            integrated HRMS custom workflows.
+                        </p>
+                        <div class="portfolio-links">
+                            <span class="portfolio-link"><i class="fa-solid fa-code"></i> Python / Odoo / XML</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Vetri Hostel -->
+                <div class="glass-panel portfolio-card" data-category="web">
+                    <div class="portfolio-img-wrapper">
+                        <img src="assets/portfolio-2.jpg" alt="Vetri Hostel Booking System" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Hostel Web App</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>Vetri Booking System</h3>
+                        <p class="portfolio-desc">
+                            Web portal developed to manage room allocation, user booking records, and monthly billing
+                            updates smoothly.
+                        </p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/RamakrishnanMCA/Vetri-boys-hostel" target="_blank"
+                                class="portfolio-link">
+                                <i class="fa-brands fa-github"></i> View Repository <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Java ATM Simulator -->
+                <div class="glass-panel portfolio-card" data-category="java">
+                    <div class="portfolio-img-wrapper">
+                        <img src="assets/portfolio-1.jpg" alt="ATM Simulator" class="portfolio-img">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-tag">Desktop Console</span>
+                        </div>
+                    </div>
+                    <div class="portfolio-body">
+                        <h3>ATM Simulator</h3>
+                        <p class="portfolio-desc">
+                            A Java-based simulation software replicating actual ATM transaction flows, user card
+                            balances, and pin validations.
+                        </p>
+                        <div class="portfolio-links">
+                            <a href="https://github.com/RamakrishnanMCA/ATM-SIMULATOR---Java" target="_blank"
+                                class="portfolio-link">
+                                <i class="fa-brands fa-github"></i> View Repository <i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Services Section -->
+    <section class="section reveal" id="services">
+        <div class="container">
+            <h2 class="section-title">05. What I Do</h2>
+            <div class="services-grid">
+
+                <!-- Service 1 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3>Odoo Development</h3>
+                    <p>
+                        Comprehensive custom coding, API linkages, customized accounting reports, workflows adjustments,
+                        and module deployment across Odoo.sh environments.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="glass-panel service-card">
+                    <div class="service-icon-wrapper">
+                        <i class="fa-solid fa-layer-group"></i>
+                    </div>
+                    <h3>Backend & Web Design</h3>
+                    <p>
+                        Structuring powerful databases and APIs using Python, SQL, and crafting modern interactive
+                        visual designs on the web.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Contact Footer Section -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <h2 class="section-title" style="margin-bottom: 3.5rem;">06. Get In Touch</h2>
+            <div class="footer-grid">
+
+                <!-- Footer Info Panel -->
+                <div class="footer-info">
+                    <h2>Let's build something.</h2>
+                    <p>
+                        Whether you are looking to hire a backend specialist, integrate customized Odoo operations for
+                        your business, or talk tech, feel free to reach out!
+                    </p>
+                    <div class="footer-loc">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Kumbakonam, Tamil Nadu, India</span>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/ramakrishnan-m-123448279" target="_blank"
+                            class="social-btn linkedin" title="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/RamakrishnanMCA" target="_blank" class="social-btn github"
+                            title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="mailto:contact.ramakrishnanm@gmail.com" class="social-btn email" title="Email Me">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                        <a href="tel:+916374161014" class="social-btn phone" title="Call Me">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Details Glass Panel -->
+                <div class="glass-panel contact-card">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+
+                        <!-- Email -->
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <i class="fa-regular fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-content">
+                                <p>Email</p>
+                                <a href="mailto:contact.ramakrishnanm@gmail.com">contact.ramakrishnanm@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="contact-detail-item">
+                            <div class="contact-detail-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+                            <div class="contact-detail-content">
+                                <p>Mobile</p>
+                                <a href="tel:+916374161014" style="display: block;">+91 63741 61014</a>
+                                <a href="tel:+919894067671" style="display: block; margin-top: 0.2rem;">+91 98940
+                                    67671</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Copyright -->
+            <div class="copyright">
+                <p>&copy; 2026 Ramakrishnan M.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="superman-container standing" id="supermanPet">
+        <div class="pet-bubble" id="supermanBubble">Debug. Build. Deploy. 💻</div>
+        <div class="cyber-pet">
+            <svg class="superman-svg svg-flying" viewBox="-20 0 100 100" width="75" height="125">
+                <path class="sm-cape-fly" d="M 18 25 L 12 95 Q 21 88 30 95 Q 39 88 48 95 L 32 25 Z" fill="#e60000" />
+                <path d="M 22 24 L 20 5 C 20 3 24 3 24 5 L 26 24 Z" fill="#ffd9b3" />
+                <path d="M 22 24 L 20 8 L 24 8 Z" fill="#0055ff" />
+                <path d="M 28 24 L 30 2 C 30 0 34 0 34 2 L 32 24 Z" fill="#ffd9b3" />
+                <path d="M 28 24 L 30 5 L 34 5 Z" fill="#0055ff" />
+                <path class="sm-arm-fly-left" d="M 18 36 Q 13 43 15 50 Q 18 49 19 46 Q 19 41 23 40 Z" fill="#ffd9b3" />
+                <path class="sm-arm-fly-right" d="M 32 36 Q 37 43 35 50 Q 32 49 31 46 Q 31 41 27 40 Z" fill="#ffd9b3" />
+                <rect x="21" y="48" width="8" height="30" fill="#0055ff" rx="2" />
+                <rect x="21" y="70" width="8" height="12" fill="#e60000" rx="2" />
+                <rect x="19" y="75" width="4" height="7" fill="#e60000" rx="1" />
+                <rect x="27" y="75" width="4" height="7" fill="#e60000" rx="1" />
+                <path d="M 18 24 C 18 20 32 20 32 24 L 29 48 L 21 48 Z" fill="#0055ff" />
+                <rect x="20" y="44" width="10" height="3" fill="#ffcc00" />
+                <path d="M 20 47 L 30 47 L 28 53 L 22 53 Z" fill="#e60000" />
+                <polygon points="21,26 29,26 31,29 25,35 19,29" fill="#ffcc00" />
+                <polygon points="22,27 28,27 29,29 25,34 21,29" fill="#e60000" />
+                <circle cx="25" cy="16" r="6" fill="#ffd9b3" />
+                <path d="M 18 16 C 18 10 32 10 32 16 C 29 13 27 14 25 17 C 23 14 21 13 18 16 Z" fill="#1a1a1a" />
+            </svg>
+            <svg class="superman-svg svg-standing" viewBox="-15 0 80 80" width="45" height="72">
+                <path class="sm-cape-stand" d="M 16 20 L 11 72 Q 18 69 25 72 Q 32 69 39 72 L 34 20 Z" fill="#e60000" />
+                <rect x="16" y="66" width="6" height="8" fill="#e60000" rx="1" />
+                <rect x="28" y="66" width="6" height="8" fill="#e60000" rx="1" />
+                <rect x="16" y="44" width="6" height="24" fill="#0055ff" rx="1" />
+                <rect x="28" y="44" width="6" height="24" fill="#0055ff" rx="1" />
+                <rect x="14" y="22" width="22" height="22" fill="#0055ff" rx="3" />
+                <rect x="14" y="40" width="22" height="4" fill="#ffcc00" />
+                <path d="M 14 44 L 36 44 L 32 50 L 18 50 Z" fill="#e60000" />
+                <polygon points="21,26 29,26 31,29 25,35 19,29" fill="#ffcc00" />
+                <polygon points="22,27 28,27 29,29 25,34 21,29" fill="#e60000" />
+                <path d="M 14 24 Q 6 32 15 40" fill="none" stroke="#0055ff" stroke-width="4.5" stroke-linecap="round" />
+                <path d="M 36 24 Q 44 32 35 40" fill="none" stroke="#0055ff" stroke-width="4.5" stroke-linecap="round" />
+                <circle cx="15" cy="40" r="2.5" fill="#ffd9b3" />
+                <circle cx="35" cy="40" r="2.5" fill="#ffd9b3" />
+                <circle cx="25" cy="13" r="6.5" fill="#ffd9b3" />
+                <path d="M 17 13 C 17 6 33 6 33 13 C 29 10 27 11 25 14 C 23 11 21 10 17 13 Z" fill="#1a1a1a" />
+            </svg>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
