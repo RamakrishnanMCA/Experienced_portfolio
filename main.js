@@ -8,6 +8,50 @@ Interactive Features: Canvas Crystals, Dashboard scroll, Scramble Text
 
 document.addEventListener('DOMContentLoaded', () => {
 
+    // --- Cursor Motion Accent ---
+    const cursorWand = document.getElementById('cursorWand');
+    let cursorX = window.innerWidth / 2;
+    let cursorY = window.innerHeight / 2;
+    let prevX = cursorX;
+    let prevY = cursorY;
+    let wandX = cursorX;
+    let wandY = cursorY;
+    let wandAngle = -18;
+
+    function normalizeAngleDelta(delta) {
+        return ((delta + 180) % 360) - 180;
+    }
+
+    function renderCursor() {
+        wandX += (cursorX - wandX) * 0.14;
+        wandY += (cursorY - wandY) * 0.14;
+
+        if (cursorWand) {
+            const dx = cursorX - prevX;
+            const dy = cursorY - prevY;
+            if (Math.abs(dx) + Math.abs(dy) > 0.5) {
+                const targetAngle = Math.atan2(dy, dx) * (180 / Math.PI) + 20;
+                wandAngle += normalizeAngleDelta(targetAngle - wandAngle) * 0.08;
+            } else {
+                wandAngle += normalizeAngleDelta(-18 - wandAngle) * 0.04;
+            }
+
+            cursorWand.style.transform = `translate(${wandX}px, ${wandY}px) translate(-50%, -50%) rotate(${wandAngle}deg)`;
+        }
+
+        prevX = cursorX;
+        prevY = cursorY;
+
+        requestAnimationFrame(renderCursor);
+    }
+
+    document.body.classList.add('cursor-ready');
+    document.addEventListener('mousemove', (event) => {
+        cursorX = event.clientX;
+        cursorY = event.clientY;
+    });
+    renderCursor();
+
     // --- 1. Dynamic Mouse Coordinate Glow Tracker ---
     const glowOverlay = document.getElementById('glowOverlay');
     document.addEventListener('mousemove', (e) => {

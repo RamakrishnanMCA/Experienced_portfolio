@@ -28,6 +28,10 @@
     <!-- 2. Dynamic Hover Light Overlay -->
     <div id="glowOverlay" class="gradient-orbs-overlay"></div>
 
+    <div class="cursor-wand" id="cursorWand" aria-hidden="true">
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+    </div>
+
     <!-- 3. Speedometer Scroll Tracker (Dashboard) -->
     <div class="scroll-tracker" id="scrollTracker">
         <div class="scroll-speedometer">
@@ -184,6 +188,27 @@
                     </div>
                 </div>
             </div>
+
+            <div class="skill-showcase">
+                <div class="glass-panel skill-showcard">
+                    <div class="skill-showicon"><i class="fa-solid fa-cubes"></i></div>
+                    <h3>Odoo Core</h3>
+                    <p>ORM, views, workflows, server actions, and module structure tuned for business logic.</p>
+                    <span class="skill-chip">85% strength</span>
+                </div>
+                <div class="glass-panel skill-showcard">
+                    <div class="skill-showicon"><i class="fa-solid fa-plug-circle-bolt"></i></div>
+                    <h3>API & Sync</h3>
+                    <p>REST-style integrations, scheduled syncs, JSON imports, and approval-driven data flows.</p>
+                    <span class="skill-chip">Production use</span>
+                </div>
+                <div class="glass-panel skill-showcard">
+                    <div class="skill-showicon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Data Layer</h3>
+                    <p>PostgreSQL, SQL logic, record performance, and importer optimization at scale.</p>
+                    <span class="skill-chip">1,000 rows/min</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -310,6 +335,10 @@
                         </div>
                     </div>
                     <div class="portfolio-body">
+                        <div class="portfolio-metrics">
+                            <span class="portfolio-metric">150-column importer</span>
+                            <span class="portfolio-metric">1,000 rows/min</span>
+                        </div>
                         <h3>Custom Modules</h3>
                         <p class="portfolio-desc">
                             Designed and deployed complex models, tailored ORM flows, accounting pipelines, and
@@ -330,6 +359,10 @@
                         </div>
                     </div>
                     <div class="portfolio-body">
+                        <div class="portfolio-metrics">
+                            <span class="portfolio-metric">Room booking flow</span>
+                            <span class="portfolio-metric">Live billing updates</span>
+                        </div>
                         <h3>Vetri Booking System</h3>
                         <p class="portfolio-desc">
                             Web portal developed to manage room allocation, user booking records, and monthly billing
@@ -354,6 +387,10 @@
                         </div>
                     </div>
                     <div class="portfolio-body">
+                        <div class="portfolio-metrics">
+                            <span class="portfolio-metric">Card validation</span>
+                            <span class="portfolio-metric">Transaction flow</span>
+                        </div>
                         <h3>ATM Simulator</h3>
                         <p class="portfolio-desc">
                             A Java-based simulation software replicating actual ATM transaction flows, user card
