@@ -918,6 +918,32 @@ a {
     border-color: var(--accent-magenta);
 }
 
+.visitor-counter {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.9rem;
+    padding: 0.8rem 1rem;
+    border-radius: 18px;
+    flex-wrap: nowrap;
+    width: fit-content;
+}
+
+.visitor-counter-label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    white-space: nowrap;
+}
+
+.visitor-counter-badge {
+    height: 20px;
+    width: auto;
+    display: block;
+    flex-shrink: 0;
+}
+
 /* Glassmorphism Interactive Contact Card */
 .contact-card {
     padding: 3rem;
@@ -970,7 +996,12 @@ a {
 }
 
 .copyright {
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    text-align: left;
     margin-top: 4rem;
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -1148,6 +1179,11 @@ a {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
+
+    .copyright {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1191,6 +1227,11 @@ a {
 
     .contact-card {
         padding: 2rem;
+    }
+
+    .visitor-counter {
+        justify-content: center;
+        width: 100%;
     }
 }
 

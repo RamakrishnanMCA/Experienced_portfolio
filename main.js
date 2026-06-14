@@ -7,7 +7,6 @@ Interactive Features: Canvas Crystals, Dashboard scroll, Scramble Text
 */
 
 document.addEventListener('DOMContentLoaded', () => {
-    
 
     // --- 1. Dynamic Mouse Coordinate Glow Tracker ---
     const glowOverlay = document.getElementById('glowOverlay');
